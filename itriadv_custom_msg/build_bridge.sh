@@ -43,12 +43,6 @@ source $ITRIADV1_DIR/devel/setup.bash
 source $ITRIADV2_DIR/install/setup.bash
 rm -rf $BRIDGE_DIR/log $BRIDGE_DIR/build $BRIDGE_DIR/install 
 printenv | grep ROS
-mkdir -p $BRIDGE_DIR/src
-cd $BRIDGE_DIR/src/
-
-if [[ ! -f "$BRIDGE_DIR/src/ros1_bridge" ]]; then
-    git clone git@github.com:ros2/ros1_bridge.git
-fi
 cd $BRIDGE_DIR
 colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure
 

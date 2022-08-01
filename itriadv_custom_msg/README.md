@@ -58,14 +58,14 @@ source build_bridge.sh
 
 4. Build ros1_bridge under bridge_ws
     ```sh
+    mkdir -p ~/bridge_ws/src
+    cd ~/bridge_ws/src/
+    git clone git@github.com:Harrisonust/ros1_bridge_itriadv.git
+
     source $ROS1_INSTALL_PATH/setup.bash 
     source $ROS2_INSTALL_PATH/setup.bash 
     source ~/itriadv/devel/setup.bash
     source ~/itriadv2/install/setup.bash
-
-    mkdir -p ~/bridge_ws/src
-    cd ~/bridge_ws/src/
-    git clone git@github.com:ros2/ros1_bridge.git
     cd ~/bridge_ws
     colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure
     ```
