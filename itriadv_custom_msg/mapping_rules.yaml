@@ -354,7 +354,7 @@
     sender_id: 'sender_id'
 -
   ros1_package_name: 'msgs'
-  ros1_message_name: 'FlagInfo'
+  ros1_message_name: 'Flag_Info'
   ros2_package_name: 'msgs'
   ros2_message_name: 'FlagInfo'
   fields_1_to_2:
