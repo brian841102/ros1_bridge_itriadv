@@ -101,6 +101,35 @@
     height: 'height'
 -
   ros1_package_name: 'msgs'
+  ros1_message_name: 'BrakeCmd'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'BrakeCmd'
+  fields_1_to_2:
+    header: 'header'
+    Fbrake_Vcmd: 'front_brake_volt_cmd'
+    Fbrake_enable: 'front_brake_enable'
+    Rbrake_Vcmd: 'rear_brake_volt_cmd'
+    Rbrake_enable: 'rear_brake_enable'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'BrakeFeedback'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'BrakeFeedback'
+  fields_1_to_2:
+    header: 'header'
+    Fbrake_volt_fb: 'front_brake_volt_fb'
+    Rbrake_volt_fb: 'rear_brake_volt_fb'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'BrakePressure'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'BrakePressure'
+  fields_1_to_2:
+    header: 'header'
+    Fbrake_pressure: 'front_brake_pressure'
+    Rbrake_pressure: 'rear_brake_pressure'
+-
+  ros1_package_name: 'msgs'
   ros1_message_name: 'BusStop'
   ros2_package_name: 'msgs'
   ros2_message_name: 'BusStop'
@@ -417,6 +446,17 @@
     filter_state: 'filter_state'
 -
   ros1_package_name: 'msgs'
+  ros1_message_name: 'GeoFenceTest'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'GeoFenceTest'
+  fields_1_to_2:
+    header: 'header'
+    id: 'id'
+    id_str: 'id_str'
+    pp_point: 'pp_point'
+    pp_time: 'pp_time'
+-
+  ros1_package_name: 'msgs'
   ros1_message_name: 'Gui'
   ros2_package_name: 'msgs'
   ros2_message_name: 'Gui'
@@ -688,6 +728,15 @@
     radPoint: 'rad_point'
 -
   ros1_package_name: 'msgs'
+  ros1_message_name: 'RadarInfo'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'RadarInfo'
+  fields_1_to_2:
+    imgPoint60: 'img_point60'
+    imgPoint30: 'img_point30'
+    radAngle: 'rad_angle'
+-
+  ros1_package_name: 'msgs'
   ros1_message_name: 'RadObject'
   ros2_package_name: 'msgs'
   ros2_message_name: 'RadObject'
@@ -715,15 +764,6 @@
     objects: 'objects'
 -
   ros1_package_name: 'msgs'
-  ros1_message_name: 'RadarInfo'
-  ros2_package_name: 'msgs'
-  ros2_message_name: 'RadarInfo'
-  fields_1_to_2:
-    imgPoint60: 'img_point60'
-    imgPoint30: 'img_point30'
-    radAngle: 'rad_angle'
--
-  ros1_package_name: 'msgs'
   ros1_message_name: 'RouteInfo'
   ros2_package_name: 'msgs'
   ros2_message_name: 'RouteInfo'
@@ -731,6 +771,16 @@
     routeid: 'routeid'
     route_path: 'route_path'
     stops: 'stops'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'SelfDriveState'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'SelfDriveState'
+  fields_1_to_2:
+    header: 'header'
+    Drive_start: 'drive_start'
+    Drive_stop: 'drive_stop'
+    Self_driving_on: 'self_driving_on'
 -
   ros1_package_name: 'msgs'
   ros1_message_name: 'Spat'
@@ -745,6 +795,36 @@
     index: 'index'
     intersection_id: 'intersection_id'
     road_id: 'road_id'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'SpeedFeedback'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'SpeedFeedback'
+  fields_1_to_2:
+    speed_kph: 'speed_kph'
+    speed_mps: 'speed_mps'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'StateControlFlag'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'StateControlFlag'
+  fields_1_to_2:
+    header: 'header'
+    overtake_flag: 'overtake_flag'
+    AEB_on: 'aeb_on'
+    Idle_flag: 'idle_flag'
+    AEB_flag: 'aeb_flag'
+    Slow_flag: 'slow_flag'
+    Obj_detect: 'obj_detect'
+    Stop_acc: 'stop_acc'
+    Stop_check: 'stop_check'
+    Map_define_switch: 'map_define_switch'
+    Uturn_flag: 'uturn_flag'
+    Gain_change: 'gain_change'
+    Uphill_flag: 'uphill_flag'
+    Uturn_gain_val: 'uturn_gain_val'
+    Uturn_speed: 'uturn_speed'
+    Right_turn: 'right_turn'
 -
   ros1_package_name: 'msgs'
   ros1_message_name: 'StopInfo'
@@ -797,6 +877,15 @@
     odometry_auto: 'odometry_auto'
 -
   ros1_package_name: 'msgs'
+  ros1_message_name: 'ThrottleStatus'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'ThrottleStatus'
+  fields_1_to_2:
+    aeb_flag: 'aeb_flag'
+    brake_engage: 'brake_engage'
+    static_flag: 'static_flag'
+-
+  ros1_package_name: 'msgs'
   ros1_message_name: 'TrackInfo'
   ros2_package_name: 'msgs'
   ros2_message_name: 'TrackInfo'
@@ -822,6 +911,16 @@
     position: 'position'
     estimated_position: 'estimated_position'
     estimated_velocity: 'estimated_velocity'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'TrafficLightStateInfo'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'TrafficLightStateInfo'
+  fields_1_to_2:
+    AEB_range: 'aeb_range'
+    Light_Distance: 'light_distance'
+    Light_flag: 'light_flag'
+    Light_acc: 'light_acc'
 -
   ros1_package_name: 'msgs'
   ros1_message_name: 'TransfBox'
@@ -883,3 +982,13 @@
     path5_to_v_y: 'path5_to_v_y'
     path6_to_v_x: 'path6_to_v_x'
     path6_to_v_y: 'path6_to_v_y'
+-
+  ros1_package_name: 'msgs'
+  ros1_message_name: 'XbywireCmd'
+  ros2_package_name: 'msgs'
+  ros2_message_name: 'XbywireCmd'
+  fields_1_to_2:
+    XbyWire_enable: 'xbywire_enable'
+    brake_enable: 'brake_enable'
+    steer_enable: 'steer_enable'
+    throttle_enable: 'throttle_enable'
