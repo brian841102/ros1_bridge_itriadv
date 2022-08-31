@@ -984,7 +984,7 @@
     path6_to_v_y: 'path6_to_v_y'
 -
   ros1_package_name: 'msgs'
-  ros1_message_name: 'XbywireCmd'
+  ros1_message_name: 'XbyWireCmd'
   ros2_package_name: 'msgs'
   ros2_message_name: 'XbywireCmd'
   fields_1_to_2:
